@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Portal de Notícias Cloud</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="container">
+            <h1>Portal de Notícias <span>Cloud</span></h1>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre o projeto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="destaque">
+            <h2>Sobre o projeto</h2>
+            <p>
+                Este site simula o front-end de um portal de notícias hospedado em um servidor
+                Linux containerizado. Ele faz parte do Trabalho 03 da disciplina de Cloud Computing
+                da Unidavi, evoluindo o cenário definido nos Trabalhos 01 e 02.
+            </p>
+        </section>
+
+        <section class="lista">
+            <h3>O que foi automatizado com Shell Script</h3>
+            <ul>
+                <li>Atualização do sistema operacional</li>
+                <li>Instalação e validação do Apache, com pacotes de mídia (imagemagick, ffmpeg)</li>
+                <li>Criação da estrutura de pastas do portal (artigos, autores, categorias, mídias)</li>
+                <li>Backup compactado dos dados editoriais</li>
+                <li>Deploy do site estático para /var/www/html</li>
+                <li>Gerenciamento de processos do servidor</li>
+                <li>Monitoramento de CPU, memória, disco e Apache, com alertas</li>
+                <li>Criação de grupo noticias_ops e usuários jornalista / editor_chefe</li>
+                <li>Geração de relatório operacional consolidado</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Trabalho 03 - Cloud Computing - Unidavi | Aluno: Otavio Rodrigues</p>
+        </div>
+    </footer>
+</body>
+</html>

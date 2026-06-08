@@ -1,0 +1,88 @@
+PS C:\Users\1031159\Desktop\trabalho-cloud-computing-3\trabalho03-scripts\trabalho03-scripts> cat logs/relatorio_execucao.txt
+============================================================
+ RELATORIO OPERACIONAL
+============================================================
+ Aluno      : Otavio Rodrigues
+ Instituicao: Unidavi
+ Tema       : Portal de Noticias
+ Gerado em  : 2026-06-08 22:20:41
+============================================================
+
+------------------------------------------------------------
+>>> Espaco em disco
+------------------------------------------------------------
+Filesystem      Size  Used Avail Use% Mounted on
+overlay        1007G  2.9G  953G   1% /
+tmpfs            64M     0   64M   0% /dev
+tmpfs           1.9G     0  1.9G   0% /sys/fs/cgroup
+shm              64M     0   64M   0% /dev/shm
+C:\             476G  290G  187G  61% /app/logs
+/dev/sdd       1007G  2.9G  953G   1% /etc/hosts
+tmpfs           1.9G     0  1.9G   0% /proc/acpi
+tmpfs           1.9G     0  1.9G   0% /sys/firmware
+
+------------------------------------------------------------
+>>> Uso dos diretorios do projeto
+------------------------------------------------------------
+48K     /app/noticias
+0       /app/backups
+8.0K    /app/logs
+12K     /app/source
+20K     /var/www/html
+
+------------------------------------------------------------
+>>> Status do Apache
+------------------------------------------------------------
+[OK] Apache em execucao
+ * apache2 is running
+
+------------------------------------------------------------
+>>> Ultimos backups (top 5)
+------------------------------------------------------------
+total 0
+-rw-r--r-- 1 root root 410 Jun  8 22:15 backup_noticias_2026-06-08_22-15.tar.gz
+-rw-r--r-- 1 root root 410 Jun  8 22:14 backup_noticias_2026-06-08_22-14.tar.gz
+-rw-r--r-- 1 root root 384 Jun  8 22:03 backup_noticias_2026-06-08_22-03.tar.gz
+
+------------------------------------------------------------
+>>> Arquivos publicados em /var/www/html
+------------------------------------------------------------
+total 12K
+drwxr-xr-x 2 root root 4.0K Jun  8 22:16 assets
+-rwxr-xr-x 1 root root 2.4K Jun  8 22:16 index.html
+-rwxr-xr-x 1 root root 2.1K Jun  8 22:16 sobre.html
+
+------------------------------------------------------------
+>>> Logs disponiveis
+------------------------------------------------------------
+total 8.0K
+-rw-r--r-- 1 root root  454 Jun  8 22:12 apache.log
+-rw-r--r-- 1 root root  258 Jun  8 22:15 backup.log
+-rw-r--r-- 1 root root  128 Jun  8 22:16 deploy.log
+-rw-r--r-- 1 root root  510 Jun  8 22:13 estrutura.log
+-rw-r--r-- 1 root root   64 Jun  8 22:18 monitoramento.log
+-rw-r--r-- 1 root root  194 Jun  8 22:20 processos.log
+-rw-r--r-- 1 root root 2.2K Jun  8 22:20 relatorio_execucao.txt
+-rw-r--r-- 1 root root  112 Jun  8 22:12 update.log
+-rw-r--r-- 1 root root  266 Jun  8 22:18 usuarios.log
+
+------------------------------------------------------------
+>>> Usuarios e grupo do projeto
+------------------------------------------------------------
+noticias_ops:x:1000:
+jornalista:x:1000:1000::/home/jornalista:/bin/bash
+editor_chefe:x:1001:1000::/home/editor_chefe:/bin/bash
+
+------------------------------------------------------------
+>>> Permissoes dos diretorios principais
+------------------------------------------------------------
+drwxr-x--- 10 jornalista noticias_ops 4096 Jun  8 22:13 /app/noticias
+drwxr-x---  2 jornalista noticias_ops 4096 Jun  8 22:13 /app/noticias/artigos
+drwxr-x---  2 jornalista noticias_ops 4096 Jun  8 22:13 /app/noticias/autores
+drwxr-x---  2 jornalista noticias_ops 4096 Jun  8 22:13 /app/noticias/backups
+drwxr-x---  2 jornalista noticias_ops 4096 Jun  8 22:13 /app/noticias/categorias
+drwxr-x---  2 jornalista noticias_ops 4096 Jun  8 22:13 /app/noticias/dados
+drwxr-x---  2 jornalista noticias_ops 4096 Jun  8 22:13 /app/noticias/logs
+drwxr-x---  2 jornalista noticias_ops 4096 Jun  8 22:13 /app/noticias/midias
+drwxr-xr-x  2 jornalista noticias_ops 4096 Jun  8 22:13 /app/noticias/publicacao
+PS C:\Users\1031159\Desktop\trabalho-cloud-computing-3\trabalho03-scripts\trabalho03-scripts>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Notícias Cloud</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="container">
+            <h1>Portal de Notícias <span>Cloud</span></h1>
+            <p class="slogan">Informação em tempo real, hospedada em um ambiente Linux automatizado.</p>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre o projeto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="destaque">
+            <span class="tag">Tecnologia</span>
+            <h2>Como o DevOps simplifica a publicação de notícias</h2>
+            <p>
+                Este portal roda em um container Ubuntu Server com Apache, provisionado por
+                scripts Shell. Backups, deploys e monitoramento são automatizados, simulando
+                a rotina de uma equipe de operações de cloud.
+            </p>
+        </section>
+
+        <section class="grid">
+            <article class="card">
+                <span class="tag">Cloud</span>
+                <h3>Infraestrutura como código</h3>
+                <p>O Dockerfile e o docker-compose descrevem todo o ambiente do portal.</p>
+            </article>
+
+            <article class="card">
+                <span class="tag">Operações</span>
+                <h3>Backups diários</h3>
+                <p>Pastas de artigos, autores e categorias são empacotadas em tar.gz datados.</p>
+            </article>
+
+            <article class="card">
+                <span class="tag">Editorial</span>
+                <h3>Grupo noticias_ops</h3>
+                <p>Usuários jornalista e editor_chefe têm permissões controladas via chmod/chown.</p>
+            </article>
+
+            <article class="card">
+                <span class="tag">Monitoramento</span>
+                <h3>Alertas em tempo real</h3>
+                <p>CPU, RAM, disco e status do Apache verificados a cada execução.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Trabalho 03 - Cloud Computing - Unidavi | Aluno: Otavio Rodrigues</p>
+        </div>
+    </footer>
+</body>
+</html>

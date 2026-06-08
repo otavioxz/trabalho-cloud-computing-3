@@ -1,0 +1,13 @@
+services:
+  trabalho03-linux:
+    build: .
+    container_name: trabalho03-linux
+    ports:
+      - "8080:80"
+    volumes:
+      - ./scripts:/app/scripts
+      - ./source:/app/source
+      - ./backups:/app/backups
+      - ./logs:/app/logs
+      - ./evidencias:/app/evidencias
+    restart: unless-stopped
