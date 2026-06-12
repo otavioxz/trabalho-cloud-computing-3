@@ -46,10 +46,12 @@ matar_processo() {
 
     echo "[ATENCAO] Encerrando PID $pid..."
     kill -15 "$pid" 2>/dev/null
+    log "SIGTERM enviado ao processo PID $pid"
     sleep 1
     if kill -0 "$pid" 2>/dev/null; then
         echo "[INFO] Processo nao respondeu ao SIGTERM, forcando SIGKILL..."
         kill -9 "$pid"
+        log "SIGKILL enviado ao processo PID $pid"
     fi
     echo "[OK] Processo $pid encerrado."
     log "matar_processo $pid - encerrado"
